@@ -1,0 +1,50 @@
+{
+
+   "details": [
+       {
+			"Experiment": "Study of Lab Equipment and Components: CRO, multimeter, and function generator, power supply- active, passive components and bread board.",     
+			"Lab": "Electronics Devices Circuits Lab (KEC-351)",               
+			"Discipline": "Electronics and Communication Engineering",
+            "Technology": "html, css, js"         
+       }
+   ],
+
+   "developer": [
+       {       
+      "Developer": "Dr. Abhishek Sharma",         
+      "Institute": "KIET Group of Institutions, Delhi-NCR, Ghaziabad",
+           "InstituteAcronym": "KIET"   
+       }
+   ],
+    
+    "developer": [
+       {       
+      "Developer": "Dr. Parvin Kaushik",         
+      "Institute": "KIET Group of Institutions, Delhi-NCR, Ghaziabad",
+           "InstituteAcronym": "KIET"   
+       }
+   ],    
+
+   "contributer": [
+       {       
+			"Contributer": "Anubhav Kulshrestha",             
+      "Institute": "KIET Group of Institutions, Delhi-NCR, Ghaziabad",
+           "InstituteAcronym": "KIET"         
+       },
+
+       {       
+			"Contributer": "Aniket Mehrotra",              
+      "Institute": "KIET Group of Institutions, Delhi-NCR, Ghaziabad", 
+           "InstituteAcronym": "KIET"         
+       },
+
+       {       
+			"Contributer": "Utkarsh Singhal",             
+      "Institute": "KIET Group of Institutions, Delhi-NCR, Ghaziabad",               
+			"InstituteAcronym": "KIET"         
+       },
+
+       
+   ]
+
+}

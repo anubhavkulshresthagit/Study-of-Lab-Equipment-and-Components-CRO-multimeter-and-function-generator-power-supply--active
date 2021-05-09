@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <title>Hello, world!</title>
+
+</head>
+
+<body>
+
+  <!---------------------------------------- home page --------------------------------------------->
+  
+  
+  
+  <div class="first">
+    
+    <div class="whole">
+      <h4 style="margin-top: 0.5%;">AIM :- </h4>
+      <p style=""> Study of Lab Equipment and Components: CRO, multimeter, and function generator, power supply- active,
+        passive components and bread board.</p>
+
+    </div>
+
+    <div class="card-deck container">
+      <div class="card">
+        <img class="card-img-top" style="width: 70%; height: 60%; margin: 0 auto;" src="images/mul.png"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">MULTIMETER</h5>
+          <p class="card-text">Interactive Free flash animation to understand the multimeter.</p>
+        </div>
+        <div>
+          <button class="button button1 zoom" onclick="sim1(); typeWriter();">Go</button>
+        </div>
+
+      </div>
+      <div class="card">
+        <img class="card-img-top" style="width: 95%; height: 50%; margin: 0 auto;" src="images/CRO2.png"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">CRO AND FUNCTION GENERATOR</h5>
+          <p class="card-text">It has been designed to study various waveforms using a C.R.O.-like sin wave, cos wave
+            and tan wave.</p>
+        </div>
+        <div>
+          <button class="button button1 zoom" onclick="sim2()">Go</button>
+        </div>
+
+      </div>
+      <div class="card">
+        <img class="card-img-top" style="width: 45%; height: 40%; margin: 0 auto;" src="images/breadboard.png"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">ACTIVE AND PASSIVE COMPONENTS</h5>
+          <p class="card-text">This is a simulator which gives information about active and passive components with
+            corresponding example and also give a better information about breadboard.</p>
+        </div>
+        <div>
+         <button class="button button1 zoom" onclick="sim3(); typeWriter2(); typeWriter1(); ">Go</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <!--------------------------------- Active and passive components -------------------------------->
+  <div id="sim3" class="active">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  
+    <div class="main">
+      <div class="header">
+        <h2 style="">ACTIVE AND PASSIVE COMPONENTS AND BREADBOARD </h2>
+      </div>
+  
+      
+        <button class="home zoom" onclick="sim3normal()">
+          <h3 id="back" style="cursor: pointer; margin-top: 0%; color: black; font-size: 23px; font-weight: 350;">Back</h3>
+        </button>
+    
+  
+  
+  
+      <div class="contain">
+        <div class="row">
+          <div class="col-sm">
+            <div class="leftTab">
+  
+              <div class="head1">
+                <p>Active Components</p>
+              </div>
+  
+              <div class="explain">
+                <div class="explain2">
+                  <div id="padder" class="matter">
+                    <img id="upperImage" src="images/active.png">
+                  </div>
+                  <div class="book">
+                    <div class="book1">
+                      <div class="regularDetail">
+                        <p id="regularDetail" style=""></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pins">
+                <div class="container">
+                  <div class="circle zoom" onclick="battery();"><img style="width: 70%; height: 90%"
+                      src="images/batterypin.png"></div>
+                  <div class="circle zoom" onclick="led();"><img style="width: 30%; height: 90%;" src="images/ledpin.png">
+                  </div>
+  
+                  <div class="circle zoom" onclick="diode();"><img style="height: 78%; width: 60px;" src="images/diode.png">
+                  </div>
+                </div>
+                <div class="container" style="padding: 0 50px 0 50px;">
+                  <div class="circle zoom" onclick="transistor();"><img style="width: 58%; height: 90%;"
+                      src="images/transistorpin.png"></div>
+                  <div style="padding-top: 25px;"><button class="zoom" onclick="typeWriter2();"
+                      style="border-radius: 13px; background-color: #00ff00; height: 40px; margin: 0 auto; ">Study</button>
+                  </div>
+                  <div class="circle zoom" onclick="integrated();"><img
+                      style="margin-top: 20%; width: 65%; height: 66%; margin-right: 5px;" src="images/integratedpin.png">
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="middleTab">
+  
+              <div class="head1">
+                <p>Passive Components</p>
+              </div>
+              <div class="explain">
+                <div class="explain2">
+                  <div class="matter">
+                    <img id="upperImage1" style="" src="images/passive.png">
+                  </div>
+                  <div class="book">
+                    <div class="book1">
+                      <div class="regularDetail">
+                        <p id="regularDetail1" style=""></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pin">
+                <div class="container">
+                  <div class="circle zoom" onclick="resistor();"><img style="width: 100%; height: 17%; margin-top: 45%;"
+                      src="images/resistorpin.png"></div>
+                  <div class="circle zoom" onclick="capacitor();"><img style="width: 38%; height: 80%; margin-top: 15%;"
+                      src="images/capacitor.png"></div>
+                  <div class="circle zoom" onclick="thermister();"><img style="width: 30px; height: 85%"
+                      src="images/thermister.png"></div>
+                </div>
+                <div class="container">
+                  <div class="circle zoom" onclick="switchpin();"><img style="width: 85%; height: 95%;"
+                      src="images/switchpin.png"></div>
+                  <div style="padding-top: 25px;"><button class="zoom" onclick="typeWriter1();"
+                      style="border-radius: 13px; background-color: #00ff00; height: 40px; margin: 0 auto; ">Study</button>
+                  </div>
+                  <div class="circle zoom" onclick="inductor();"><img style="width: 100%; height: 100%; "
+                      src="images/inductor.png"></div>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="rightTab">
+  
+              <div class="head1">
+                <p>Breadboard</p>
+              </div>
+              <div class="board">
+                <div class="battery"></div>
+                <div class="left-strip"></div>
+                <div class="right-strip"></div>
+                <div class="left-band"></div>
+                <div class="right-band"></div>
+                <div class="switch"></div>
+                <div class="bulbs"></div>
+                <div class="resistor"></div>
+  
+                <div class="breadLed" onclick="circuitOn()"></div>
+                <div class="bulb" id="bulb"></div>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backGround"></div>
+  </div>
+  
+
+
+
+  <!----------------------------------------- CRO -------------------------------------------------->
+  <div id="sim2" class="croclass">
+    
+
+    <div class="headingcro">
+      <h2 style="margin-top: 0px; font-size: 30px; ">STUDY OF CRO & FUNCTION GENERATOR</h2>
+    </div>
+    
+    <div class="home zoom">
+      <button<h3 style="margin-top: 0%; color: black; font-weight: 350;" onclick="sim2normal()">Back</h3></button>
+    </div>
+
+
+
+    <div class="mainly">
+      <div class="leftTab1">
+        <div class="offly"><img id="onOff"  src="images/pic_bulboff.png"></div> 
+        <div class="functionGenerator">
+          <div class="heading1"> <h4 style="font-size: 25px; font-weight: 10px; margin-top: 5px;"> FUNCTION GENERATOR</h4> </div>
+          <div class="input">
+
+            <div class="type">
+              <div class="typeHeading"><p style="text-align: center; font-size: 20px; margin-top:22px;">Type</p></div>
+              <div class="sine">
+                <img class="zoom" id="sinClick" style="width: 60px; height: 40px; border-radius: 7px; margin-top: 5px;" onclick="sinClick()" src="images/sin.jpg">
+                <p style="margin-top: 0.8px;margin-left: 18px;">Sin</p>
+              </div>
+              <div class="square">
+                <img class="zoom" id="squareClick" style="width: 60px; height: 40px; border-radius: 7px; margin-top: 5px;" onclick="squareClick()" src="images/square.png">
+                <p style="margin-top: 0.8px;margin-left: 10px;">Square</p>
+              </div>
+              <div class="triangle">
+                <img class="zoom" id="triangleClick" style="width: 60px; height: 40px; border-radius: 7px; margin-top: 5px;" onclick="triangleClick()" src="images/triangle.png">
+                <p style="margin-top: 0.8px;margin-left: 2px;">Triangle</p>
+              </div>
+            </div>
+
+            <div class="ampInput">
+              <div class="ampInputHeading">
+                <p style="text-align: center; font-size: 20px; margin-top:25px; ">Amplitude</p>
+              </div>  
+              <div style="display: flex;">
+
+               <p class="sliderValue"> <span id="demo1"></span></p>
+                 <input id="Amplitude" style="margin-left: 30px; margin-bottom: 15px;" type="range" min="10" max="20" >
+
+
+              </div>
+
+
+            </div>
+
+            <div class="freInput">
+              <div class="freInputHeading">
+                <p style="text-align: center; font-size: 20px; margin-top:25px; ">Frequency</p>
+              </div>
+              <div style="display: flex;" >
+               <p class="sliderValue"> <span id="demo2"></span></p>
+                 <input id="Frequency" style="margin-left: 30px; margin-bottom: 15px;" type="range" min="0" max="10" step="1">
+                 </div>
+            </div>
+
+            <div class="bottomFun" style="display: flex;">
+               <div class="funGen" style="width: 30%;"> <img  onclick="changeImage()" src="images/funGen.png"></div>
+               <div class="wire" style="width: 70%;"><img src="images/blackWire.png"></div>
+
+
+              <!-- <label class="switch1">
+ <input type="checkbox" id="togBtn1" onchange="draw()"  >
+ <div class="slider round"></div>
+ </label>
+
+
+
+  <label class="switch1" style="margin-left: 220px; margin-top: 28px;">
+ <input type="checkbox" id="togBtn2" >
+ <div class="slider round"></div>
+ </label>-->
+
+
+
+
+             </div>
+          </div>
+        </div>
+        <div class="instruction">
+          <div class="instHeading"> <h4 style="font-size: 25px; font-weight: 10px; margin-top: 5px;"> INSTRUCTION</h4></div>
+          <div class="instArea">
+            <p>1. Turn On the Function Generator, using switch <img style="width: 25px; height: 25px;" src="images/fungen.png"></p>
+            <p>2. Select the type of wave of which you want to get.</p>
+            <p>3. Set the Amplitude and Frequency.</p>
+            <p>4. Press Run</p>
+            <p style="font-size: 12px; margin-top: 10px; background-color: yellow;">NOTE :- All CRO components are for study purpose only.</p> 
+          </div>
+        </div>
+      </div>
+
+      <div class="rightTab1">
+
+        <div class="outerCro" usemap="#cromap">
+
+          <div class="backGround1"></div>
+          <!---<map name="cromap">
+            <abbr title="on and off"><area style="border:3px solid black;" shape="rect" coords="853,80,915,138" height="100" width="100"></abbr>
+          </map>-->
+         <div class="div div1">
+           <!--<abbr width="5" title="ON/OFF : This is required to turn the CRO on or off as per the requirement.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr> -->
+         </div>
+
+         <div class="div div2">
+           <!--<abbr title="Channel Select : Mostly of the CRO can work simultaneously with two signals and thus there is a toggle switch for controls regarding the selection, i.e., if both the channels are used or only one is used. So, selection must be done according to requirements. If both the channels are used the selection should be ‘Dual’ or 'Duo' and if only one channel is used it should be either ‘channel 1’ or ‘channel 2’ depending on the connection">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div3">
+          <!-- <abbr title="Trigger Hold-Off: The trace in a CRO is performed by the sweeping of electrons for a small period of time on the phosphorous screen by the voltage generated due to the signal. This voltage is known as sweep voltage. When the ‘sweep’ is completed the voltage returns to its original value and thus forcing the beam of electrons to move back. This process is called ‘retrace’, when the retrace is completed again sweep starts. Hold-Off determines the time that tends to pass between ‘retrace’ and ‘sweep’.Initially it is 0 .">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel turpis nunc eget lorem</abbr> -->
+         </div>
+
+         <div class="div div4">
+           <!--<abbr width="5" title="AC/DC/GD: This is a toggle switch to tell the CRO about the filtering of the i/p signal channel.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div5">
+        <!--   <abbr width="5" title="Focus: This rotating knob is used to improve the sharpness of an image of the signal on the screen by adjusting the focus of the electronic beam. Thus, it helps in taking the proper measurements and to study the correct shape of the signal by removing the blurriness of the signal.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div6">
+        <!--   <abbr width="5" title="Intensity: This knob is used to increase the intensity of the input signal for better examination of the displayed output on the screen . This knob is marked as ‘Intens’ on the CRO.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div7">
+          <!-- <abbr width="5" title="+/- : This determines if the signal is triggered during the positive flank or the negative flank. Now, the many of you must be wondering ‘what is triggering?’, it is the synchronization of the horizontal sweep of the CRO with the proper point of the signal. If the button is on descending slope of the signal is used while triggering otherwise the ascending slope of the signal is used.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div8">
+        <!--   <abbr width="5" title="At/Norm.: Using this button you can select between Automatic triggering (At.) and manual triggering level selection.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div9">
+          <!-- <abbr width="5" title="Level: When the triggering is set to manual mode this wheel is used to set the level of manual triggering, the +/- button will make sure ascending level triggering or descending level triggering is used.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div10">
+        <!--   <abbr width="5" title="Ext.: This button is used when the timing of the CRO is not determined by the input waveform but from some another external waveform. There is an input connector beside the button where the external input is connected for the display of the waveform.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+
+         <div class="div div11">
+        <!--   <abbr width="5" title="The “Time/Div.” wheel determines, how long the electronic beam that draws the curve takes for moving from the left to the right edge of a division. The wheel controls the “time scale”. A “division” is one square on the screen of the oscilloscope.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt . Vel turpis nunc eget lorem.Vel turpis nunc eget lorem</abbr>-->
+         </div>
+         
+         <div class="img-magnifier-container">
+         <canvas id="canvas" style="width: 524px; height: 465px; border: 12px solid #0033cc; position: relative; top: 28px;background-color: #000000;   margin-top: 3px;  left: 36px;">
+         </canvas>
+        </div>
+
+
+
+         <div>
+           <button class="zoom" id="go" style="height: 30px; width: 90px; position: absolute; margin-left: 70px; margin-top: 80px; border-radius: 10px; background-color: #33cc33;" onclick="myFunction()"><b>Run</b></button>
+           <button class="zoom" id="reload"  style="height: 30px; width: 90px; position: absolute; margin-left: 70px; margin-top: 80px; border-radius: 10px; background-color: #ffcc00; display: none;"  onclick="changeImage()"><b>Reload</b></button>
+         </div>
+
+        </div>
+        <div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!--------------------------------------- Multimeter --------------------------------------------->
+  <div id="sim1" class="multimeterBody">
+    <div class="cont1">
+    <div class="subject"><h1 class="headingmulti">Multimeter</h1></div>
+         <div class="home zoom">
+          <h3 style="margin-top: 0%; color: black; font-weight: 350; font-size: 23px;" onclick="sim1normal()">Back</h3>
+        </div>
+    
+      <div class="mainmulti">
+    
+    
+        <div class="guidelines">
+           <h1 style="text-align: center;font-weight: bold;text-transform: uppercase; margin-bottom: 5px">Instructions</h1>
+          <ol>
+          <li id="instruction1" class="text" >SELECT ANY IMAGE TO START</li>
+          <li id="instruction2" class="text" >DRAG RED PIN TO POSITIVE SIDE</li>
+          <li id="instruction3" class="text" >DRAG BLACK PIN TO NEGATIVE SIDE</li>
+          <li id="instruction4" class="text" >CLICK ON PROCEED.</li>
+        </ol>
+        <div class="buttons">
+         <button class="btn zoom" style="float: left;" onclick="back()">BACK</button>
+         <button class="btn zoom" style="float: right;" onclick="proceed()">PROCEED</button>
+       </div>
+        </div>
+    
+         <div class="multimeter">
+    
+          <div class="dragger-area">
+    
+            <div class="left-arm">
+    
+              <div class="redpinDrag">
+                <div class="sign">
+                  <div class="positive">
+                            +
+                  </div>
+               </div>
+               
+              </div>
+              <img id="phoneRed" src="" style=""/>
+            </div>
+            <div class="center-body">
+              <div class="center-upper">
+                <div class="dragBox" id="dragger">
+                  <img id="myimg" src="" class="image" style="height: 65px; margin-left: 80px; margin-top: 20px; margin-left: 80px;"/>
+                </div>
+    
+              </div>
+              <div class="center-lower">
+                <div onclick="redclick()" class="left-lower" id="red">
+                  <div ><img id="redRemove"  src="images/redpin.png" draggable="true" class="redpin zoom1"/></div>
+                </div>
+                <div onclick="blackclick()" class="right-lower" id="black">
+                  <div>
+                  <img  id="blackRemove" src="images/blackpin.png" draggable="true"  class="blackpin zoom1">
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-arm">
+              <div class="blackpinDrag">
+                <div class="sign sig2" style="">
+                  <div class="positive" style="font-size:40px; top:35%;">
+                        -
+                  </div>
+               </div>
+              </div>
+              <img id="phoneBlack" src="" style=""/>
+            </div>
+    
+    
+    
+          </div>
+    
+           <div class="multi">
+            <div class="screen" id="screen">
+              <div class="screenText" id="screenText"></div>
+            </div>
+    
+    
+            <div class="circleio">
+              <button class="off" onclick="off()"></button>
+              <button class="V" onclick="V()"></button>
+              <img id="circle" src="images/circle.png">
+              <button class="A" onclick="A()"></button>
+              <button class="temp" onclick="temp()"></button>
+              <button class="wi" onclick="wi()"></button>
+              <button class="ohm" onclick="ohm()"></button>
+              <button class="ohm1" onclick="ohm1()"></button>
+              <button class="vdash" onclick="vdash()"></button>
+              <button class="vdash1" onclick="vdash1()"></button>
+              <button class="vdash2" onclick="vdash2()"></button>
+            </div>
+    
+    
+           </div>
+         </div>
+    
+    
+        </div>
+    
+    
+    
+    
+    
+      <div class="items-decker">
+        <button class="bto" title="battery" onclick='drags1()' ><h5 class="deckHead">Battery</h5><div class="item"><img style="width: 100px;
+          height: 70px;
+          cursor: pointer; "  src="images/battery.png" ></div></button>
+          
+          <button class="bto" onclick='drags2()' ><h5 class="deckHead">Resistor</h5><div class="item"><img  style="width: 100px;
+              height: 80px;
+              cursor: pointer; " src="images/Resistor (2).png" ></div></button>
+          <button class="bto" onclick='drags3()' ><h6 class="deckHead">Transister(npn)</h6><div class="item"><img  src="images/npn.png" ></div></button>
+          <button class="bto" onclick='drags4()' ><h5 class="deckHead">Diode</h5><div class="item"><img  src="images/diode.png" ></div></button>
+          <button class="bto" onclick='drags5()' ><h6 class="deckHead">Transister(pnp)</h6><div class="item"><img  src="images/trans.png" ></div></button>
+          <button class="bto" onclick='drags6()' ><h5 class="deckHead">Resistor</h5><div class="item"><img  src="images/Resistor (3).png" ></div></button>
+          <button class="bto" onclick='drags7()' ><h5 class="deckHead">Capacitor</h5><div class="item"><img  src="images/capacitor.png" ></div></button>
+    
+          
+    </div>
+    
+    </div>
+  </div>
+  
+  
+  
+
+  <script src="js/index.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
